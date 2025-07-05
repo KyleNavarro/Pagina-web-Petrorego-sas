@@ -38,17 +38,17 @@
       </li>
 
       <script>
-  function toggleSubmenu(event) {
-    // Evita que el enlace recargue la página
-    event.preventDefault();
+        function toggleSubmenu(event) {
+          // Evita que el enlace recargue la página
+          event.preventDefault();
 
-    // Encuentra el submenú (es el siguiente hermano)
-    const submenu = event.target.nextElementSibling;
+          // Encuentra el submenú (es el siguiente hermano)
+          const submenu = event.target.nextElementSibling;
 
-    // Alterna la clase hidden para mostrar/ocultar
-    submenu.classList.toggle('hidden');
-  }
-</script>
+          // Alterna la clase hidden para mostrar/ocultar
+          submenu.classList.toggle('hidden');
+        }
+    </script>
 
       <!-- Otros enlaces -->
       <li><a href="#" class="hover:text-white font-semibold">Catálogo</a></li>
