@@ -17,7 +17,8 @@
         <ul class="flex space-x-8 items-center relative flex-wrap justify-baseline">
           <!-- Productos con submenú -->
           <li class="relative group">
-            <a href="#" class="hover:text-white font-semibold">Productos</a>
+            <a href="#" class="hover:text-white font-semibold"
+            onclick="toggleSubmenu(event)">Productos</a>
 
             <!-- Submenú -->
             <ul class="absolute top-full left-0 w-44 bg-[#FEF0C1] shadow-lg z-10 hidden
@@ -33,6 +34,19 @@
               <li><a href="/products/alturas.html" class="block px-4 py-2 hover:bg-[#FBBC1F] hover:font-semibold" target="_blank">Alturas</a></li>
             </ul>
           </li>
+
+          <script>
+            function toggleSubmenu(event) {
+              // Evita que el enlace recargue la página
+              event.preventDefault();
+
+              // Encuentra el submenú (es el siguiente hermano)
+              const submenu = event.target.nextElementSibling;
+
+              // Alterna la clase hidden para mostrar/ocultar
+              submenu.classList.toggle('hidden');
+            }
+          </script>
 
           <!-- Otros enlaces -->
           <li><a href="#" class="hover:text-white font-semibold">Catálogo</a></li>
