@@ -1,4 +1,6 @@
 #Pagina web de la empresa Petrorego sas
+
+Construida con TailWind CSS y JavaScrip Vanila
 contiene información de producto y contacto directo, dirección y ciudad en la que operan
 <br>
 <img width="2533" height="952" alt="image" src="https://github.com/user-attachments/assets/40e20874-0da6-47d1-b43d-8ea3e718b766" />
